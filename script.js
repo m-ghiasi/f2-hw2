@@ -1,8 +1,9 @@
 
 let answerEl =document.getElementById("answer")
 let arr = [1, 2, function(){} , "text", true, ]
-let nameEl = document.getElementById("name").value
+
 let reverseEl = document.getElementById("reverse")
+let primeEl = document.getElementById("prime-el")
 
 
 function typer(input){
@@ -29,17 +30,22 @@ dataType()
 
 function myPrompt(){
     let age = prompt("عدد 20 را وارد کنید ");
-    if (age = 20) {
+    if (age === 20) {
         alert ("ورودی معتبر است")
         
     } else {
-        ("ورودی نامعتبر است ")
+        alert("ورودی نامعتبر است ")
     }
 }
-myPrompt()
+// myPrompt()
 
-function reversName(){
-  
-  console.log(name.value)
-    reverseEl.textContent += nameEl
+function reverse(){
+    let nameEl = document.getElementById("name").value;
+    reverseEl.textContent = "reverseName :" + nameEl;
 }
+
+
+
+
+
+
