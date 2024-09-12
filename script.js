@@ -2,8 +2,10 @@
 let answerEl =document.getElementById("answer")
 let arr = [1, 2, function(){} , "text", true, ]
 
-let reverseEl = document.getElementById("reverse")
+let newEl = document.getElementById("new-el")
 let primeEl = document.getElementById("prime-el")
+
+
 
 
 function typer(input){
@@ -39,11 +41,14 @@ function myPrompt(){
 }
 // myPrompt()
 
-function reverse(){
-    let nameEl = document.getElementById("name").value;
-    reverseEl.textContent = "reverseName :" + nameEl;
-}
 
+
+function reverseString(str) {
+    let nameEl = document.getElementById("name").value;
+    str = nameEl
+    let reversString =  nameEl.split("").reverse().join("");
+    newEl.textContent = "answer :" + reversString
+}
 
 
 
