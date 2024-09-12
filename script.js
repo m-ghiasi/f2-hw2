@@ -4,6 +4,7 @@ let arr = [1, 2, function(){} , "text", true, ]
 
 let newEl = document.getElementById("new-el")
 let primeEl = document.getElementById("prime-el")
+let resultEl = document.getElementById("result")
 
 
 
@@ -50,7 +51,24 @@ function reverseString(str) {
     newEl.textContent = "answer :" + reversString
 }
 
+function primeNumber(num1 , num2){
+    let arr = [2,3,5,7,11,13,17,19]
+    
+    for (let i = 0; i < arr.length; i++) {
+        if( num1 <= arr[i] &&  arr[i] <= num2){
+            resultEl.textContent += arr[i] +","
+            
+
+        }
+        if(typeof num1 && typeof num2 != "number"){
+            console.log("ورودی نامعتبر ")
+        } 
+        
+        
+    }
 
 
+}
 
+primeNumber(1,8)
 
